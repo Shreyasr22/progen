@@ -612,7 +612,7 @@ with tab2:
             engine_arg = "Auto" if "Auto" in engine_choice else ("ProtGPT2" if "ProtGPT2" in engine_choice else "Fast")
             
             prog_bar.progress(40)
-            updated_df, active_engine_label = generate_and_evaluate_candidates(
+            updated_df, active_engine_label, new_candidates_df = generate_and_evaluate_candidates(
                 count=num_seqs,
                 temperature=temperature,
                 min_len=len_range[0],
@@ -622,9 +622,71 @@ with tab2:
             )
             prog_bar.progress(90)
             st.cache_data.clear()
+            st.session_state["latest_generated"] = new_candidates_df
+            st.session_state["latest_engine"] = active_engine_label
+            st.session_state["gen_msg"] = f"Successfully generated and evaluated {len(new_candidates_df)} new mini-protein candidates using **{active_engine_label}**!"
             prog_bar.progress(100)
-            st.success(f"Generated and scored {num_seqs} new candidate sequences! Active Engine: **{active_engine_label}**.")
             st.rerun()
+
+    if "gen_msg" in st.session_state:
+        st.success(st.session_state.pop("gen_msg"))
+
+    # Display Newly Generated Candidate Sequences Section
+    st.markdown("---")
+    st.markdown("### 🧬 Candidate Protein Amino Acid Sequences")
+    st.markdown("The primary amino acid sequences of candidate mini-proteins designed to target the oncogenic BRAF V600E binding cleft are displayed below for direct structural and sequence inspection:")
+
+    seqs_to_show = st.session_state.get("latest_generated", df_all.head(5))
+    
+    # Clean sequence display table
+    seq_disp_df = seqs_to_show[[
+        "candidate_id", "sequence", "length", "developability_status",
+        "dg_mut_kcal_mol", "ddg_selectivity_kcal_mol", "composite_score"
+    ]].copy()
+    seq_disp_df = seq_disp_df.rename(columns={
+        "candidate_id": "Candidate ID",
+        "sequence": "Primary Amino Acid Sequence",
+        "length": "Length (AA)",
+        "developability_status": "Status",
+        "dg_mut_kcal_mol": "ΔG_mut (kcal/mol)",
+        "ddg_selectivity_kcal_mol": "ΔΔG Selectivity",
+        "composite_score": "Composite Score"
+    })
+
+    st.dataframe(
+        seq_disp_df,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Primary Amino Acid Sequence": st.column_config.TextColumn(
+                "Primary Amino Acid Sequence",
+                width="large",
+                help="Complete 1-letter amino acid sequence of the engineered mini-protein"
+            ),
+            "Composite Score": st.column_config.ProgressColumn(
+                "Composite Score",
+                format="%.3f",
+                min_value=0.0,
+                max_value=1.0,
+            ),
+            "ΔG_mut (kcal/mol)": st.column_config.NumberColumn(format="%.2f"),
+            "ΔΔG Selectivity": st.column_config.NumberColumn(format="%.2f")
+        }
+    )
+
+    with st.expander("📋 View Individual FASTA Blocks (Copyable for BLAST / AlphaFold)"):
+        for _, srow in seqs_to_show.iterrows():
+            cid = srow["candidate_id"]
+            cseq = srow["sequence"]
+            clen = srow["length"]
+            cdg = srow["dg_mut_kcal_mol"]
+            cddg = srow["ddg_selectivity_kcal_mol"]
+            cstat = srow["developability_status"]
+            fasta_txt = f">{cid} | BRAF_V600E_Binder | Len:{clen}AA | Status:{cstat} | dG_mut:{cdg:.2f} kcal/mol | ddG:{cddg:.2f} kcal/mol\n{cseq}"
+            st.code(fasta_txt, language="fasta")
+
+    st.markdown("---")
+    st.markdown("### 📊 In Vitro Biophysical & Selectivity Analysis")
 
     # Screening Funnel Chart
     st.markdown("#### 📉 In Vitro Developability Screening Funnel (Attrition Analysis)")
@@ -758,7 +820,7 @@ with tab3:
 
     # Leaderboard Table formatting
     display_df = filtered_df[[
-        "candidate_id", "length", "mw_da", "pi", "instability_index",
+        "candidate_id", "sequence", "length", "mw_da", "pi", "instability_index",
         "gravy", "developability_status", "iptm", "plddt",
         "dg_mut_kcal_mol", "kd_display", "dg_wt_kcal_mol",
         "ddg_selectivity_kcal_mol", "composite_score"
@@ -766,6 +828,7 @@ with tab3:
 
     display_df = display_df.rename(columns={
         "candidate_id": "Candidate ID",
+        "sequence": "Amino Acid Sequence",
         "length": "Length (AA)",
         "mw_da": "MW (Da)",
         "pi": "pI",
@@ -786,6 +849,11 @@ with tab3:
         use_container_width=True,
         hide_index=True,
         column_config={
+            "Amino Acid Sequence": st.column_config.TextColumn(
+                "Amino Acid Sequence",
+                width="large",
+                help="Full primary 1-letter amino acid sequence"
+            ),
             "Composite Score": st.column_config.ProgressColumn(
                 "Composite Score",
                 format="%.3f",

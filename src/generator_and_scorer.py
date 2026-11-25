@@ -866,11 +866,11 @@ def generate_and_evaluate_candidates(
     max_len: int = 80,
     engine_mode: str = "Auto",
     existing_df: pd.DataFrame = None
-) -> tuple[pd.DataFrame, str]:
+) -> tuple[pd.DataFrame, str, pd.DataFrame]:
     """
     Generates new candidates using ProtGPT2 or fast biophysical motif generator,
     evaluates all biophysical & interaction metrics, and appends them to current candidates.
-    Returns (updated_df, active_engine_status).
+    Returns (updated_df, active_engine_status, new_candidates_df).
     """
     active_engine = "Fast Biophysical Motif Generator"
 
@@ -912,7 +912,7 @@ def generate_and_evaluate_candidates(
     # Sort by composite score
     combined = combined.sort_values(by="composite_score", ascending=False).reset_index(drop=True)
     combined.to_csv(CANDIDATES_CSV, index=False)
-    return combined, active_engine
+    return combined, active_engine, new_df
 
 
 if __name__ == "__main__":
