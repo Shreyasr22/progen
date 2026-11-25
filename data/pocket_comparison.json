@@ -1,0 +1,779 @@
+{
+  "mutant_4FK3": {
+    "target_res_id": 600,
+    "target_res_name": "GLU",
+    "target_charge": -1.0,
+    "radius_A": 10.0,
+    "total_pocket_residues": 37,
+    "pocket_net_charge": -0.9,
+    "avg_pocket_gravy": -0.32,
+    "pocket_volume_A3": 3063.0,
+    "category_counts": {
+      "charged": 11,
+      "polar_charged": 1,
+      "polar": 7,
+      "hydrophobic": 14,
+      "aromatic": 1,
+      "special": 3
+    },
+    "pocket_residues": [
+      {
+        "res_num": 600,
+        "res_name": "GLU",
+        "min_distance_A": 0.0,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": true
+      },
+      {
+        "res_num": 571,
+        "res_name": "LEU",
+        "min_distance_A": 1.14,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 599,
+        "res_name": "PHE",
+        "min_distance_A": 1.63,
+        "property": "Hydrophobic/Aromatic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 2.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 601,
+        "res_name": "LEU",
+        "min_distance_A": 1.66,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 598,
+        "res_name": "ASP",
+        "min_distance_A": 1.9,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 549,
+        "res_name": "GLU",
+        "min_distance_A": 1.93,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 572,
+        "res_name": "HIS",
+        "min_distance_A": 2.12,
+        "property": "Basic (+/polar)",
+        "category": "polar_charged",
+        "charge": 0.1,
+        "kd_hydropathy": -3.2,
+        "is_target_res": false
+      },
+      {
+        "res_num": 570,
+        "res_name": "TYR",
+        "min_distance_A": 2.95,
+        "property": "Polar/Aromatic",
+        "category": "aromatic",
+        "charge": 0.0,
+        "kd_hydropathy": -1.3,
+        "is_target_res": false
+      },
+      {
+        "res_num": 597,
+        "res_name": "GLY",
+        "min_distance_A": 3.06,
+        "property": "Special/Flexible",
+        "category": "special",
+        "charge": 0.0,
+        "kd_hydropathy": -0.4,
+        "is_target_res": false
+      },
+      {
+        "res_num": 602,
+        "res_name": "ALA",
+        "min_distance_A": 3.17,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 596,
+        "res_name": "ILE",
+        "min_distance_A": 4.02,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 573,
+        "res_name": "ALA",
+        "min_distance_A": 4.25,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 550,
+        "res_name": "THR",
+        "min_distance_A": 4.44,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 604,
+        "res_name": "GLU",
+        "min_distance_A": 4.47,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 603,
+        "res_name": "THR",
+        "min_distance_A": 4.59,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 595,
+        "res_name": "LYS",
+        "min_distance_A": 4.82,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 569,
+        "res_name": "ASP",
+        "min_distance_A": 5.5,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 594,
+        "res_name": "VAL",
+        "min_distance_A": 5.6,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.2,
+        "is_target_res": false
+      },
+      {
+        "res_num": 548,
+        "res_name": "ILE",
+        "min_distance_A": 5.8,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 605,
+        "res_name": "LYS",
+        "min_distance_A": 6.51,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 574,
+        "res_name": "LYS",
+        "min_distance_A": 6.57,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 551,
+        "res_name": "LYS",
+        "min_distance_A": 7.06,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 606,
+        "res_name": "SER",
+        "min_distance_A": 7.3,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 607,
+        "res_name": "ARG",
+        "min_distance_A": 7.67,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 568,
+        "res_name": "MET",
+        "min_distance_A": 7.77,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 608,
+        "res_name": "TRP",
+        "min_distance_A": 7.99,
+        "property": "Hydrophobic/Aromatic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": -0.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 593,
+        "res_name": "THR",
+        "min_distance_A": 8.11,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 616,
+        "res_name": "GLN",
+        "min_distance_A": 8.26,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 609,
+        "res_name": "SER",
+        "min_distance_A": 8.27,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 610,
+        "res_name": "GLY",
+        "min_distance_A": 8.59,
+        "property": "Special/Flexible",
+        "category": "special",
+        "charge": 0.0,
+        "kd_hydropathy": -0.4,
+        "is_target_res": false
+      },
+      {
+        "res_num": 547,
+        "res_name": "ILE",
+        "min_distance_A": 8.63,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 615,
+        "res_name": "GLU",
+        "min_distance_A": 8.69,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 617,
+        "res_name": "LEU",
+        "min_distance_A": 8.78,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 575,
+        "res_name": "SER",
+        "min_distance_A": 9.43,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 592,
+        "res_name": "LEU",
+        "min_distance_A": 9.54,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 614,
+        "res_name": "PHE",
+        "min_distance_A": 9.89,
+        "property": "Hydrophobic/Aromatic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 2.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 567,
+        "res_name": "GLY",
+        "min_distance_A": 9.91,
+        "property": "Special/Flexible",
+        "category": "special",
+        "charge": 0.0,
+        "kd_hydropathy": -0.4,
+        "is_target_res": false
+      }
+    ]
+  },
+  "wildtype_1UWH": {
+    "target_res_id": 600,
+    "target_res_name": "VAL",
+    "target_charge": 0.0,
+    "radius_A": 10.0,
+    "total_pocket_residues": 36,
+    "pocket_net_charge": 1.1,
+    "avg_pocket_gravy": 0.01,
+    "pocket_volume_A3": 2984.5,
+    "category_counts": {
+      "charged": 9,
+      "polar_charged": 1,
+      "polar": 8,
+      "hydrophobic": 15,
+      "aromatic": 1,
+      "special": 2
+    },
+    "pocket_residues": [
+      {
+        "res_num": 600,
+        "res_name": "VAL",
+        "min_distance_A": 0.0,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.2,
+        "is_target_res": true
+      },
+      {
+        "res_num": 571,
+        "res_name": "LEU",
+        "min_distance_A": 1.24,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 599,
+        "res_name": "PHE",
+        "min_distance_A": 1.48,
+        "property": "Hydrophobic/Aromatic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 2.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 598,
+        "res_name": "ASP",
+        "min_distance_A": 1.65,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 601,
+        "res_name": "LEU",
+        "min_distance_A": 1.66,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 572,
+        "res_name": "HIS",
+        "min_distance_A": 1.89,
+        "property": "Basic (+/polar)",
+        "category": "polar_charged",
+        "charge": 0.1,
+        "kd_hydropathy": -3.2,
+        "is_target_res": false
+      },
+      {
+        "res_num": 549,
+        "res_name": "GLU",
+        "min_distance_A": 1.93,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 597,
+        "res_name": "GLY",
+        "min_distance_A": 3.13,
+        "property": "Special/Flexible",
+        "category": "special",
+        "charge": 0.0,
+        "kd_hydropathy": -0.4,
+        "is_target_res": false
+      },
+      {
+        "res_num": 602,
+        "res_name": "ALA",
+        "min_distance_A": 3.17,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 570,
+        "res_name": "TYR",
+        "min_distance_A": 3.31,
+        "property": "Polar/Aromatic",
+        "category": "aromatic",
+        "charge": 0.0,
+        "kd_hydropathy": -1.3,
+        "is_target_res": false
+      },
+      {
+        "res_num": 573,
+        "res_name": "ALA",
+        "min_distance_A": 4.25,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 550,
+        "res_name": "THR",
+        "min_distance_A": 4.44,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 596,
+        "res_name": "ILE",
+        "min_distance_A": 4.51,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 604,
+        "res_name": "VAL",
+        "min_distance_A": 4.58,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.2,
+        "is_target_res": false
+      },
+      {
+        "res_num": 603,
+        "res_name": "THR",
+        "min_distance_A": 4.59,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 548,
+        "res_name": "ILE",
+        "min_distance_A": 5.8,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 595,
+        "res_name": "LYS",
+        "min_distance_A": 5.96,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 569,
+        "res_name": "ASP",
+        "min_distance_A": 6.04,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 605,
+        "res_name": "LYS",
+        "min_distance_A": 6.53,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 574,
+        "res_name": "LYS",
+        "min_distance_A": 6.57,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 551,
+        "res_name": "LYS",
+        "min_distance_A": 7.06,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -3.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 594,
+        "res_name": "VAL",
+        "min_distance_A": 7.2,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.2,
+        "is_target_res": false
+      },
+      {
+        "res_num": 606,
+        "res_name": "SER",
+        "min_distance_A": 7.33,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 616,
+        "res_name": "GLN",
+        "min_distance_A": 7.72,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 607,
+        "res_name": "ARG",
+        "min_distance_A": 8.01,
+        "property": "Basic (+)",
+        "category": "charged",
+        "charge": 1.0,
+        "kd_hydropathy": -4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 617,
+        "res_name": "LEU",
+        "min_distance_A": 8.2,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 615,
+        "res_name": "GLU",
+        "min_distance_A": 8.44,
+        "property": "Acidic (-)",
+        "category": "charged",
+        "charge": -1.0,
+        "kd_hydropathy": -3.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 593,
+        "res_name": "THR",
+        "min_distance_A": 8.52,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.7,
+        "is_target_res": false
+      },
+      {
+        "res_num": 608,
+        "res_name": "TRP",
+        "min_distance_A": 8.54,
+        "property": "Hydrophobic/Aromatic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": -0.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 547,
+        "res_name": "ILE",
+        "min_distance_A": 8.58,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 4.5,
+        "is_target_res": false
+      },
+      {
+        "res_num": 568,
+        "res_name": "MET",
+        "min_distance_A": 8.58,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 1.9,
+        "is_target_res": false
+      },
+      {
+        "res_num": 609,
+        "res_name": "SER",
+        "min_distance_A": 8.95,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 610,
+        "res_name": "GLY",
+        "min_distance_A": 9.29,
+        "property": "Special/Flexible",
+        "category": "special",
+        "charge": 0.0,
+        "kd_hydropathy": -0.4,
+        "is_target_res": false
+      },
+      {
+        "res_num": 618,
+        "res_name": "SER",
+        "min_distance_A": 9.38,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 575,
+        "res_name": "SER",
+        "min_distance_A": 9.43,
+        "property": "Polar Uncharged",
+        "category": "polar",
+        "charge": 0.0,
+        "kd_hydropathy": -0.8,
+        "is_target_res": false
+      },
+      {
+        "res_num": 592,
+        "res_name": "LEU",
+        "min_distance_A": 9.64,
+        "property": "Hydrophobic",
+        "category": "hydrophobic",
+        "charge": 0.0,
+        "kd_hydropathy": 3.8,
+        "is_target_res": false
+      }
+    ]
+  },
+  "comparative_analysis": {
+    "residue_600_shift": "Val600 (Nonpolar Hydrophobic, Charge: 0) -> Glu600 (Polar Acidic, Charge: -1.0)",
+    "charge_delta": -2.0,
+    "gravy_delta": -0.33,
+    "pocket_residue_delta": 1,
+    "biophysical_implication": "The V600E mutation introduces a constitutive negative charge into the activation segment, destabilizing the auto-inhibited hydrophobic packing and creating an electrostatic pocket. De novo mini-proteins engineered with complementary basic residues (Arg, Lys) can selectively form salt bridges with Glu600 while avoiding unfavorable steric/charge clashes with wild-type Val600."
+  }
+}
